@@ -1,0 +1,49 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}cours{% endblock %}
+
+{% block body %}
+<section class="banner">
+    <h1>Bienvenue sur Kids Learning</h1>
+    <button class="btn-banner">Découvrir</button>
+</section>
+<section>
+    <div class="cours-titre">
+        <h2>Nos cours</h2>
+        <p>Apprenez à votre rythme avec nos cours en ligne</p>
+    </div>
+    <div class="cours">
+        <div class="cours-fiche">
+            <div class="cours-img">
+                <img src="{{asset('assets/img/maths.jpeg')}}" alt="Photo d'un élève au tableau">
+            </div>
+            <div class="cours-texte">
+                <h3>Mathématiques</h3>
+                <p>Explorez les concepts fondamentaux et avancés des mathématiques et devenez un maître des nombres.</p>
+                <button class="btn-cours">Démarrer l'apprentissage</button>
+            </div>
+        </div>
+         <div class="cours-fiche">
+            <div class="cours-img">
+                <img src="{{asset('assets/img/science.jpeg')}}" alt="Photo d'un élève au tableau">
+            </div>
+            <div class="cours-texte">
+                <h3>Sciences</h3>
+                <p>Découvrez les mystères de l'univers, de la biologie moléculaire à la physique quantique.</p>
+                <button class="btn-cours">Démarrer l'apprentissage</button>
+            </div>
+        </div>
+         <div class="cours-fiche">
+            <div class="cours-img">
+                <img src="{{asset('assets/img/literature.jpeg')}}" alt="Photo d'un élève au tableau">
+            </div>
+            <div class="cours-texte">
+                <h3>Littérature</h3>
+                <p>Parcourez les oeuvres des plus grands auteurs, poètes et dramaturges de l'histoire.</p>
+                <button class="btn-cours">Démarrer l'apprentissage</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

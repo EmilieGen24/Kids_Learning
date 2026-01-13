@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Contact{% endblock %}
+
+{% block body %}
+<section>
+    <div class="contact-titre">
+        <h2>Contactez-nous</h2>
+        <p>Avez-vous des questions ou des suggestions ? N'hésitez pas à nous contacter !</p>
+    </div>
+    <form action="" method="POST">
+        <label for="nom">Nom :</label>
+        <input type="nom" name="nom" id="nom">
+        <label for="email">Email :</label>
+        <input type="email" name="email" id="email">
+        <label for="choix-sujet">Sélectionner un sujet :</label>
+        <select name="choose-sujet" id="choix-sujet">
+            <option value="math">Mathématiques</option>
+            <option value="science">Sciences</option>
+            <option value="litterature">Littérature</option>
+        </select>
+        <label for="sujet">Sujet :</label>
+        <input type="sujet" name="sujet" id="sujet">
+        <label for="message">Message :</label>
+        <textarea name="message" id="message"></textarea>
+        <input type="submit" class="btn-contact" value="Envoyer">
+    </form>
+</section>
+
+{% endblock %}
